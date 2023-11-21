@@ -17,6 +17,7 @@ public class StudentController {
 	private StudentRepository studentRepo;
 	
 	@RequestMapping("/add-student")
+	
 	public String saveStudents(Student student, Map map) {
 		studentRepo.save(student);
 		map.put("message", "Record Added Sucessfully");
